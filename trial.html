@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card page</title>
+  <style>
+    p, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo {
+      height: auto;
+      width: 50px;
+    }
+
+    .cardheader {
+      display: flex;
+      height: 60px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    .card {
+      border: solid 1px lightblue;
+      height: 320px;
+      max-width: 300px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .cardbody {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .savebutton {
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: solid 1px rgb(195, 189, 189);
+      background-color: white;
+      color: rgb(52, 51, 51);
+    }
+
+    .cardcenter {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 15px;
+    }
+
+    .cardbottom {
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .amount {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .place {
+      font-size: 10px;
+      color: gray;
+    }
+
+    .applybutton {
+      border-radius: 8px;
+      padding: 10px 20px;
+      border: none;
+      background-color: black;
+      color: white;
+    }
+
+    .jobvacancy {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .company {
+      font-size: 14px;
+    }
+
+    .days {
+      font-size: 10px;
+      color: gray;
+    }
+
+    .jobrole {
+      font-size: 20px;
+    }
+
+    .time, .designation {
+      border-radius: 8px;
+      padding: 10px 20px;
+      border: none;
+      background-color: rgb(231, 228, 228);
+      color: black;
+      margin-right: 5px;
+    }
+
+    .gridcontainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      max-width: 1300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gridcontainer">
+    <!-- Repeat this card structure as needed -->
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate card as needed -->
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate card as needed -->
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate card as needed -->
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate card as needed -->
+    <div class="card">
+      <div class="cardheader"> 
+        <div class="logo"><img src="Google-Symbol.png" class="logo"></div>
+        <div><button class="savebutton">Save</button></div>
+      </div>
+      <div class="cardbody">
+        <div class="cardcenter">
+          <div class="jobvacancy">
+            <p class="company">Amazon</p>
+            <p class="days">5 days ago</p> 
+          </div>
+          <div class="jobrole">Senior UI/UX Designer</div>
+          <div>
+            <button class="time">Part-time</button>
+            <button class="designation">Senior Level</button>
+          </div>
+        </div>
+        <div class="cardbottom">
+          <div class="price">
+            <p class="amount">$120/hr</p>
+            <p class="place">San Francisco, CA</p>
+          </div>
+          <div><button class="applybutton">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Add more cards as needed -->
+  </div>
+</body>
+</html>
